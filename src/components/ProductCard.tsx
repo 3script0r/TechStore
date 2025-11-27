@@ -50,7 +50,8 @@ export const ProductCard = ({ product }: ProductCardProps) => {
 
           <div className="flex items-center justify-between">
             <span className="text-2xl font-bold text-gray-900">
-              ${product.price.toFixed(2)}
+             
+              ${product.price.toLocaleString('es-CO', { minimumFractionDigits: 0 })}
             </span>
 
             <div className="flex items-center gap-2">
